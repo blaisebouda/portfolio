@@ -7,6 +7,7 @@ export type Contribution = {
   id: number;
   cover: string;
   title: string;
+  year: string;
   short_description: string;
   description: {
     more_desc: string;
@@ -22,6 +23,7 @@ export const contributions: Contribution[] = [
   {
     id: 1,
     cover: ypay,
+    year: "2024",
     title: "Solution de paiement",
     short_description:
       "Développement d’une solution de paiement sécurisée en interne chez Ytech.",
@@ -46,6 +48,7 @@ export const contributions: Contribution[] = [
   },
   {
     id: 2,
+    year: "2023",
     cover: gpharma,
     title: "Gestion de pharmacie",
     short_description:
@@ -74,6 +77,7 @@ export const contributions: Contribution[] = [
   },
   {
     id: 3,
+    year: "2025",
     cover: unionhalal,
     title: "Union Halal",
     short_description:
@@ -98,6 +102,7 @@ export const contributions: Contribution[] = [
   },
   {
     id: 4,
+    year: "2025",
     cover: portfolio,
     title: "Landing Page – Portfolio",
     short_description:

@@ -11,8 +11,7 @@ export default function CallToAction() {
             <div>
               <h1>Avez vous un Projet ?</h1>
               <p style={{ paddingTop: ".5rem" }} className="text-gray">
-                Je suis disponible pour une mission freelance ou un contrat
-                CDD/CDI.
+                Je suis disponible pour une mission freelance ou un contrat CDD.
               </p>
             </div>
             <a href="mailto:blaisebouda05@gmail.com" className="cta-btn">

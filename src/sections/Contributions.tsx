@@ -66,7 +66,13 @@ function ContributionCard({
     <Card padding="1.2rem" hasHover>
       <Flex gap="1.2rem" direction="column">
         <img src={contribution.cover} alt="screenshot" />
-        <h3 className="unbounded">{contribution.title}</h3>
+        <Flex between>
+          <h3 className="unbounded">{contribution.title}</h3>
+          <span style={{ fontSize: ".9rem" }} className="text-gray">
+            {contribution.year}{" "}
+          </span>
+        </Flex>
+
         <Flex gap=".5rem" direction="column">
           <p>{contribution.short_description}</p>
           <Technologies technologies={contribution.technologies} />
@@ -109,7 +115,7 @@ function Show({
           <div className="title">
             <h3 className="unbounded">{contribution.title}</h3>
             {desc.visit_link && (
-              <a href={desc.visit_link} className="btn-link">
+              <a href={desc.visit_link} target="_blank" className="btn-link">
                 Visiter le site
                 <RightArrow />
               </a>
