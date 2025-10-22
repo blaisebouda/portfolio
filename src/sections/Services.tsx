@@ -6,6 +6,7 @@ import vue from "../assets/logos/vuejs.png";
 import react from "../assets/logos/react.svg";
 import ai from "../assets/logos/ai.png";
 import figma from "../assets/logos/figma.png";
+import { yearAgo } from "../helpers";
 
 type Service = {
   title: string;
@@ -13,11 +14,6 @@ type Service = {
   description: string;
   logos: string[];
 };
-
-function yearAgo(year: number) {
-  const date = new Date();
-  return date.getFullYear() - year;
-}
 
 const services: Service[] = [
   {
@@ -30,14 +26,14 @@ const services: Service[] = [
   },
   {
     title: "Frontend VueJs & React",
-    note: "Je suis expert en VueJs et ReactJs",
+    note: "Je suis à l'aise avec VueJs et ReactJs",
     description:
       "Si vous avez besoin de développer une application dynamique, reactive, j’ai des bonnes compétences en VuesJs et React.",
     logos: [vue, react],
   },
   {
     title: "AI & Design UI/UX",
-    note: "Je suis Passionné par le Design UI/UX et l’IA",
+    note: "Je suis passionné par le design UI/UX et l’IA",
     description:
       "Je conçois des interfaces modernes, minimalistes et centrées sur l’utilisateur. J’intègre l’IA pour simplifier les tâches répétitives et améliorer la qualité du code.",
     logos: [ai, figma],

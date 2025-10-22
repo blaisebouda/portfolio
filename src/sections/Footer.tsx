@@ -15,13 +15,20 @@ export default function Footer() {
             <a href="https://linkedin.com/in/blaisebouda/" target="_blank">
               <Linkedin />
             </a>
-            <a href="#" target="_blank">
+            <a
+              href="https://web.facebook.com/profile.php?id=61582689866720"
+              target="_blank"
+            >
               <Facebook />
             </a>
           </div>
           <div>
             © 2025 - Designer par{" "}
-            <a className="btn-link" href="#" target="_blank">
+            <a
+              className="btn-link"
+              href="https://blaisebouda.github.io/uxui-portfolio"
+              target="_blank"
+            >
               @blaiseuiux
             </a>{" "}
             - Intégration et développement{" "}

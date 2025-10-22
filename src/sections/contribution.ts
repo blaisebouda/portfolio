@@ -1,7 +1,7 @@
-import ypay from "../assets/projects/ypay.jpg";
-import gpharma from "../assets/projects/gpharma.jpg";
-import unionhalal from "../assets/projects/unionhalal.jpg";
-import portfolio from "../assets/projects/portfolio.jpg";
+import ypay from "/projects/ypay.jpg";
+import gpharma from "/projects/gpharma.jpg";
+import unionhalal from "/projects/unionhalal.jpg";
+import portfolio from "/projects/portfolio.jpg";
 
 export type Contribution = {
   id: number;
@@ -123,6 +123,7 @@ export const contributions: Contribution[] = [
         "ReactBits → Création d’animations légères et interactives.",
         "Figma → Conception du design system et des maquettes haute-fidélité.",
       ],
+      visit_link: "https://blaisebouda.github.io/uxui-portfolio",
     },
     technologies: ["React", "TailwinCSS", "TypeScript", "Figma"],
   },
