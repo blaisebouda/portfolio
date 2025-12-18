@@ -15,12 +15,14 @@ export default function CallToAction() {
                 CDD/CDI.
               </p>
             </div>
-            <a href="mailto:blaisebouda05@gmail.com" className="cta-btn">
-              Discutons ensemble
+            <div className="cta_btn">
+              <a href="mailto:blaisebouda05@gmail.com" className="cta-btn">
+                Discutons ensemble
+              </a>
               <span className="arrow">
                 <img src={arrow} width={60} height={75} alt="arrow" />
               </span>
-            </a>
+            </div>
           </Flex>
         </div>
       </Reveal>

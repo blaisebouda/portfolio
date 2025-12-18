@@ -43,8 +43,8 @@ const services: Service[] = [
 export default function Services() {
   return (
     <section id="services" className="space-section">
-      <SectionTitle className="md-hidden">
-        Qu’est ce que je veux <br /> faire pour vous ?
+      <SectionTitle className="md-hidden ">
+        Qu’est ce que je peux <br /> faire pour vous ?
       </SectionTitle>
       <div className="section_container services_container top-space">
         {services.map((service, index) => (

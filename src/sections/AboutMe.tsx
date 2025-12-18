@@ -1,4 +1,5 @@
 import Flex from "../components/Flex";
+import Reveal from "../components/Reveal";
 
 import profileImg from "/profile.jpg";
 
@@ -7,7 +8,9 @@ const AboutMe = () => {
     <section id="philosophy" className="space-section">
       <div className="section_container about_container">
         <Flex direction="column">
-          <h1 className="section-title unbounded"> Qui suis-je ?</h1>
+          <Reveal>
+            <h1 className="section-title unbounded"> Qui suis-je ?</h1>
+          </Reveal>
           <img
             style={{ borderRadius: "1rem" }}
             src={profileImg}

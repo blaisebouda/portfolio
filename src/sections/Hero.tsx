@@ -1,5 +1,4 @@
 import Flex from "../components/Flex";
-import profileImg from "/profile.jpg";
 import Reveal from "../components/Reveal";
 
 export default function Hero() {
@@ -28,9 +27,6 @@ export default function Hero() {
             <span>+10</span> projects livrés.
           </p>
         </Flex>
-        <div className="igmx">
-          <img src={profileImg} alt="profile" width="200" />
-        </div>
       </div>
     </div>
   );

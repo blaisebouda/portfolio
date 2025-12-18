@@ -167,18 +167,22 @@ function NavigationContribution({
     <Flex wrap between>
       {prev && (
         <Flex direction="column" gap=".2rem">
-          <a href="#modal" className="btn-link" onClick={() => onShow(prev)}>
-            Projet précédent
-          </a>
-          <h4 className="unbounded">{prev.title}</h4>
+          <div style={{ cursor: "pointer" }} onClick={() => onShow(prev)}>
+            <a href="#modal" className="btn-link">
+              Projet précédent
+            </a>
+            <h4 className="unbounded">{prev.title}</h4>
+          </div>
         </Flex>
       )}
       {next && (
         <Flex direction="column" gap=".2rem">
-          <a href="#modal" className="btn-link" onClick={() => onShow(next)}>
-            Projet suivant
-          </a>
-          <h4 className="unbounded">{next.title}</h4>
+          <div style={{ cursor: "pointer" }} onClick={() => onShow(next)}>
+            <a href="#modal" className="btn-link">
+              Projet suivant
+            </a>
+            <h4 className="unbounded">{next.title}</h4>
+          </div>
         </Flex>
       )}
     </Flex>

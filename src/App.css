@@ -39,7 +39,7 @@ header {
 }
 
 .hero_container .desc {
-  max-width: 460px;
+  max-width: 420px;
 }
 
 .hero_container span {
@@ -112,6 +112,10 @@ header {
   gap: 2rem;
 }
 
+.about_container h1 {
+  margin: auto;
+}
+
 .about_container img {
   aspect-ratio: 1/1;
   width: 200px;
@@ -179,7 +183,7 @@ header {
   border: 1px solid var(--primary-color-900);
 }
 
-.call_to_action .cta-btn {
+.call_to_action .cta_btn {
   margin: auto;
   position: relative;
 }
@@ -248,14 +252,6 @@ footer {
 }
 
 @media (width > 768px) {
-  .hero_container {
-    text-align: left;
-    flex-direction: row;
-    gap: 3rem;
-    margin: auto;
-    width: max-content;
-  }
-
   .call_to_action .arrow {
     display: block;
     position: absolute;
