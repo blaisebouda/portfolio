@@ -5,12 +5,14 @@ import Philosophy from "./sections/Philosophy";
 import Contributions from "./sections/Contributions";
 import CallToAction from "./sections/CallToAction";
 import Footer from "./sections/Footer";
+import AboutMe from "./sections/AboutMe";
 
 function App() {
   return (
     <>
       <Hero />
       <main>
+        <AboutMe />
         <Services />
         <Philosophy />
         <Contributions />

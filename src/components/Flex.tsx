@@ -4,6 +4,7 @@ type StackProps = {
   center?: boolean;
   between?: boolean;
   wrap?: boolean;
+  className?: string;
   children: React.ReactNode;
 };
 
@@ -13,10 +14,12 @@ export default function Flex({
   center = false,
   between = false,
   wrap = false,
+  className,
   children,
 }: StackProps) {
   return (
     <div
+      className={className}
       style={{
         display: "flex",
         gap: gap,

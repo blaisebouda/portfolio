@@ -1,7 +1,6 @@
 import Flex from "../components/Flex";
 import profileImg from "/profile.jpg";
 import Reveal from "../components/Reveal";
-import { yearAgo } from "../helpers";
 
 export default function Hero() {
   return (
@@ -25,8 +24,8 @@ export default function Hero() {
           </Reveal>
           <h1 className="unbounded">Blaise Bouda</h1>
           <p className="desc text-lg">
-            Développeur Fullstack <span>{`+${yearAgo(2020)} ans`}</span>{" "}
-            d’expérience et avec <span>+10</span> projects livrés.
+            Développeur FullStack <span>+5 ans</span> d’expérience et avec{" "}
+            <span>+10</span> projects livrés.
           </p>
         </Flex>
         <div className="igmx">
