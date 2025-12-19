@@ -49,7 +49,9 @@ export default function Modal({
   useEffect(() => {
     if (!isOpen) return;
     const toFocus = initialFocusRef?.current ?? dialogRef.current ?? undefined;
-    toFocus && (toFocus as HTMLElement).focus();
+    if (toFocus) {
+      (toFocus as HTMLElement).focus();
+    }
   }, [isOpen, initialFocusRef]);
 
   // Restore focus on close
@@ -57,7 +59,9 @@ export default function Modal({
     if (!isOpen && lastActiveElementRef.current) {
       try {
         lastActiveElementRef.current.focus();
-      } catch {}
+      } catch {
+        document.body.focus();
+      }
     }
   }, [isOpen]);
 
