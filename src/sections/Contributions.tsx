@@ -6,6 +6,7 @@ import RightArrow from "../components/icons/RightArrow";
 import { contributions, type Contribution } from "./contribution";
 import Modal from "../components/Modal";
 import ChevronLeft from "../components/icons/ChevronLeft";
+import ExternalLink from "../components/icons/ExternalLink";
 
 export default function Contributions() {
   const [open, setOpen] = useState(false);
@@ -117,7 +118,7 @@ function Show({
             {desc.visit_link && (
               <a href={desc.visit_link} target="_blank" className="btn-link">
                 Visiter le site
-                <RightArrow />
+                <ExternalLink />
               </a>
             )}
           </div>

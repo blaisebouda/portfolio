@@ -6,6 +6,7 @@ import vue from "../assets/logos/vuejs.png";
 import react from "../assets/logos/react.svg";
 import ai from "../assets/logos/ai.png";
 import figma from "../assets/logos/figma.png";
+import node from "../assets/logos/nodejs.png";
 import { yearAgo } from "../helpers";
 
 type Service = {
@@ -17,12 +18,12 @@ type Service = {
 
 const services: Service[] = [
   {
-    title: "Backend avec Laravel",
-    note: `Je développe avec Laravel depuis plus de ${yearAgo(2021)} ans`,
+    title: "Backend Laravel & Node.js",
+    note: `Je développe avec Laravel depuis plus de ${yearAgo(2022)} ans et avec Node.js depuis plus de ${yearAgo(2023)} ans`,
     description: `Je développe des applications PHP depuis plus de ${yearAgo(
-      2019
+      2020,
     )} ans et je maitrise son framework moderne Laravel.`,
-    logos: [laravel],
+    logos: [laravel, node],
   },
   {
     title: "Frontend VueJs & React",

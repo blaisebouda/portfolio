@@ -1,7 +1,8 @@
-import ypay from "/projects/ypay.jpg";
 import gpharma from "/projects/gpharma.jpg";
-import unionhalal from "/projects/unionhalal.jpg";
 import portfolio from "/projects/portfolio.jpg";
+import tiim from "/projects/tiim.jpg";
+import unionhalal from "/projects/unionhalal.jpg";
+import ypay from "/projects/ypay.jpg";
 
 export type Contribution = {
   id: number;
@@ -20,6 +21,32 @@ export type Contribution = {
 };
 
 export const contributions: Contribution[] = [
+  {
+    id: 5,
+    year: "2026",
+    cover: tiim,
+    title: "Tiim",
+    short_description:
+      "Conception et intégration de la landing de Tiim. Une application mobile pour trouver des médicaments en quelques secondes.",
+    description: {
+      more_desc:
+        "Conception et intégration de la landing de Tiim. Une application mobile pour trouver des médicaments en quelques secondes.",
+      context:
+        "Tiim est une application mobile imaginée par des talents burkinabés pour rendre la recherche de médicaments plus simple et accessible. J’ai eu l’opportunité de concevoir et d’intégrer la landing page du projet.",
+      contributions: [
+        "Réalisation du market design complet avec Figma.",
+        "Intégration du design en React avec une structure réactive et fluide.",
+      ],
+      technologies: [
+        "React → Développement d’une interface réactive et performante.",
+        "TailwindCSS → Mise en page responsive et design épuré.",
+        "Figma → Conception du design system et des maquettes haute-fidélité.",
+      ],
+      visit_link: "https://fasotiim.com/",
+    },
+    technologies: ["React", "TailwinCSS", "TypeScript", "Figma"],
+  },
+
   {
     id: 1,
     cover: ypay,
@@ -46,6 +73,60 @@ export const contributions: Contribution[] = [
     },
     technologies: ["Laravel", "Swagger", "API"],
   },
+  {
+    id: 3,
+    year: "2025",
+    cover: unionhalal,
+    title: "Union Halal",
+    short_description:
+      "Conception UI/UX et développement de l’API en Laravel pour une application de rencontre 100% Halal.",
+    description: {
+      more_desc:
+        "Conception UI/UX et développement de l’API en Laravel pour une application de rencontre 100% Halal.",
+      context:
+        "Notre client souhaitait aider les musulmans à trouver leur âme sœur dans un cadre 100% halal et éthique. J’ai alors été sollicité pour travailler sur le design de l’application et apporter mon expertise en backend avec Laravel.",
+      contributions: [
+        "Conception du design avec prototypes interactifs.",
+        "Développement du backend avec Laravel.",
+        "Rédaction de la documentation API avec Swagger.",
+      ],
+      technologies: [
+        "Figma → Prototypage et conception UI/UX.",
+        "Laravel → Développement du backend robuste et évolutif.",
+        "Swagger → Documentation claire et interactive de l’API.",
+      ],
+    },
+    technologies: ["Laravel", "Swagger", "Figma"],
+  },
+
+  {
+    id: 4,
+    year: "2025",
+    cover: portfolio,
+    title: "Landing Page – Portfolio",
+    short_description:
+      "Intégration d’une landing page moderne regroupant mes principales réalisations en design.",
+    description: {
+      more_desc:
+        "Intégration d’une landing page moderne regroupant mes principales réalisations en design.",
+      context:
+        "Passionné par le design, j’ai conçu cette page comme un espace d’expression et d’apprentissage. Elle marque une nouvelle étape dans mon parcours : approfondir mes compétences UI/UX et évoluer vers ma vision à long terme est de devenir Product Designer.",
+      contributions: [
+        "Réalisation du market design complet sur Figma (charte graphique, écrans et interactions).",
+        "Intégration frontend en React avec une structure réactive et fluide.",
+        "Animations dynamiques avec ReactBits pour renforcer l’engagement et la convivialité.",
+      ],
+      technologies: [
+        "React → Développement d’une interface réactive et performante.",
+        "TailwindCSS → Mise en page responsive et design épuré.",
+        "ReactBits → Création d’animations légères et interactives.",
+        "Figma → Conception du design system et des maquettes haute-fidélité.",
+      ],
+      visit_link: "https://blaisebouda.github.io/uxui-portfolio",
+    },
+    technologies: ["React", "TailwinCSS", "TypeScript", "Figma"],
+  },
+
   {
     id: 2,
     year: "2023",
@@ -74,57 +155,5 @@ export const contributions: Contribution[] = [
       ],
     },
     technologies: ["VueJs", "Pinia", "TailwindCSS", " Electron Js"],
-  },
-  {
-    id: 3,
-    year: "2025",
-    cover: unionhalal,
-    title: "Union Halal",
-    short_description:
-      "Conception UI/UX et développement de l’API en Laravel pour une application de rencontre 100% Halal.",
-    description: {
-      more_desc:
-        "Conception UI/UX et développement de l’API en Laravel pour une application de rencontre 100% Halal.",
-      context:
-        "Notre client souhaitait aider les musulmans à trouver leur âme sœur dans un cadre 100% halal et éthique. J’ai alors été sollicité pour travailler sur le design de l’application et apporter mon expertise en backend avec Laravel.",
-      contributions: [
-        "Conception du design avec prototypes interactifs.",
-        "Développement du backend avec Laravel.",
-        "Rédaction de la documentation API avec Swagger.",
-      ],
-      technologies: [
-        "Figma → Prototypage et conception UI/UX.",
-        "Laravel → Développement du backend robuste et évolutif.",
-        "Swagger → Documentation claire et interactive de l’API.",
-      ],
-    },
-    technologies: ["Laravel", "Swagger", "Figma"],
-  },
-  {
-    id: 4,
-    year: "2025",
-    cover: portfolio,
-    title: "Landing Page – Portfolio",
-    short_description:
-      "Intégration d’une landing page moderne regroupant mes principales réalisations en design.",
-    description: {
-      more_desc:
-        "Intégration d’une landing page moderne regroupant mes principales réalisations en design.",
-      context:
-        "Passionné par le design, j’ai conçu cette page comme un espace d’expression et d’apprentissage. Elle marque une nouvelle étape dans mon parcours : approfondir mes compétences UI/UX et évoluer vers ma vision à long terme est de devenir Product Designer.",
-      contributions: [
-        "Réalisation du market design complet sur Figma (charte graphique, écrans et interactions).",
-        "Intégration frontend en React avec une structure réactive et fluide.",
-        "Animations dynamiques avec ReactBits pour renforcer l’engagement et la convivialité.",
-      ],
-      technologies: [
-        "React → Développement d’une interface réactive et performante.",
-        "TailwindCSS → Mise en page responsive et design épuré.",
-        "ReactBits → Création d’animations légères et interactives.",
-        "Figma → Conception du design system et des maquettes haute-fidélité.",
-      ],
-      visit_link: "https://blaisebouda.github.io/uxui-portfolio",
-    },
-    technologies: ["React", "TailwinCSS", "TypeScript", "Figma"],
   },
 ];
